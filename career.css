@@ -1,0 +1,195 @@
+/* ===== Container ===== */
+.car-container {
+    max-width: 1180px;
+    margin: 70px auto;
+    padding: 0 20px;
+}
+
+/* ===== Header (Centered, Soft) ===== */
+.car-header {
+    text-align: center;
+    max-width: 720px;
+    margin: 0 auto 80px;
+}
+
+.car-header h1 {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.car-header p {
+    font-size: 16px;
+    color: #6b7280;
+}
+
+/* ===== Job Grid ===== */
+.car-jobs {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    gap: 28px;
+    margin-bottom: 100px;
+}
+
+/* ===== Job Card – New Look ===== */
+.car-card {
+    background: #ffffff;
+    border-radius: 14px;
+    padding: 28px;
+    border: 1px solid #ececec;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.car-card:hover {
+    box-shadow: 0 18px 40px rgba(0,0,0,0.06);
+    transform: translateY(-6px);
+}
+
+.car-card h3 {
+    font-size: 21px;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 12px;
+}
+
+.car-card p {
+    font-size: 15px;
+    color: #4b5563;
+    margin-bottom: 18px;
+}
+
+.car-card ul {
+    padding-left: 18px;
+    margin-bottom: 22px;
+}
+
+.car-card ul li {
+    font-size: 14px;
+    margin-bottom: 7px;
+    color: #374151;
+}
+
+/* ===== Button – Filled ===== */
+.car-apply-btn {
+    display: inline-block;
+    padding: 11px 22px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #ffffff;
+    background: #19272b;
+    border-radius: 999px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.car-apply-btn:hover {
+    color: #fff;
+    background: #1e40af;
+}
+
+/* ===== Form Section ===== */
+.car-form-section {
+    background: #f9fafb;
+    padding: 60px 50px;
+    border-radius: 20px;
+}
+
+.car-form-section h2 {
+    text-align: center;
+    font-size: 32px;
+    color: #000;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+/* ===== Form ===== */
+.car-form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    max-width: 860px;
+    margin: 0 auto;
+}
+
+.car-field label {
+    font-size: 13px;
+    font-weight: 500;
+    margin-bottom: 6px;
+    display: block;
+    color: #374151;
+}
+
+.car-field input,
+.car-field select,
+.car-field textarea {
+    width: 100%;
+    padding: 13px 14px;
+    font-size: 14px;
+    color: #6c6f73 !important;
+    border-radius: 10px;
+    border: 1px solid #d1d5db !important;
+    background: #ffffff !important;
+}
+
+.car-field input:focus,
+.car-field select:focus,
+.car-field textarea:focus {
+    outline: none;
+    border-color: #2563eb !important;
+}
+
+.car-field textarea {
+    grid-column: span 2;
+    min-height: 140px;
+}
+
+/* ===== Submit ===== */
+.car-submit {
+    grid-column: span 2;
+    text-align: center;
+    margin-top: 25px;
+}
+
+.car-submit button {
+    padding: 14px 42px;
+    font-size: 15px;
+    font-weight: 500;
+    background: #111827;
+    color: #ffffff !important;
+    border: none;
+    border-radius: 999px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.car-submit button:hover {
+    background: #000000;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+    .car-header h1 {
+        font-size: 32px;
+    }
+
+    .car-form-section {
+        padding: 40px 25px;
+    }
+
+    .car-form {
+        grid-template-columns: 1fr;
+    }
+
+    .car-field textarea,
+    .car-submit {
+        grid-column: span 1;
+    }
+}
+.car-full {
+    grid-column: span 2;
+}
+
+.car-full textarea {
+    width: 100%;
+    min-height: 140px;
+}
