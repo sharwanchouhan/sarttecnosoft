@@ -1487,7 +1487,8 @@
                         </div>
                     </div>
                     <div class="right">
-                        <form id="contactform" action="http://localhost:4000/api/user/contact"
+                        <!-- <form id="contactform" action="http://localhost:4000/api/user/contact" -->
+                        <form id="contactform" action="https://sartbackend.onrender.com/api/user/contact"
                         method="POST" class="form-contact-us px-md-15">
 
 
@@ -2182,7 +2183,8 @@
                 submitBtn.innerHTML = "Sending...";
 
                 try {
-                    const response = await fetch("http://localhost:4000/api/user/contact", {
+                    // const response = await fetch("http://localhost:4000/api/user/contact", {
+                    const response = await fetch("https://sartbackend.onrender.com/api/user/contact", {
                         method: "POST",
                         headers: {
                             "Content-Type": "application/json"
